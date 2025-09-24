@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
         <div className="contact-container">
           <div className="storefront-section">
             <img
-              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop&crop=center"
+              src="Poke-Bowl-Karel-Doormanstraat-457a-Rotterdam-Horecamakelaardij-Knook-en-Verbaas-8.webp"
               alt="Poké Bowl Original storefront in Rotterdam"
               className="storefront-image"
             />

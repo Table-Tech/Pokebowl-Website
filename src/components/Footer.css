@@ -1,0 +1,261 @@
+.footer {
+  background-color: #f8f8f8;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.social-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.social-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff6b3d;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.1em;
+}
+
+.social-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.social-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.facebook-icon {
+  background-color: white !important;
+}
+
+.facebook-icon svg {
+  color: blue !important;
+  fill: blue !important;
+}
+
+.instagram-icon {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+}
+
+.instagram-icon svg {
+  color: white !important;
+  fill: white !important;
+}
+
+.social-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.social-text {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 300px;
+}
+
+.social-button {
+  text-decoration: none;
+  color: #ff6b3d;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #ff6b3d;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.social-button:hover {
+  background-color: #ff6b3d;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.footer-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokebowl-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-section {
+  background-color: white;
+  padding: 2rem 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.privacy-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.privacy-logo {
+  display: flex;
+  align-items: center;
+}
+
+.retail-privacy-logo {
+  width: 120px;
+  height: 60px;
+}
+
+.privacy-text {
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.footer-bottom {
+  background-color: #333;
+  color: white;
+  padding: 1.5rem 0;
+}
+
+.footer-links {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.copyright {
+  margin: 0;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff6b3d;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .social-heading {
+    font-size: 2rem;
+  }
+
+  .social-columns {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .social-icon {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .social-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social-text {
+    font-size: 0.9rem;
+  }
+
+  .social-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .pokebowl-image {
+    max-width: 300px;
+  }
+
+  .privacy-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .retail-privacy-logo {
+    width: 100px;
+    height: 50px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .footer-nav {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .footer-link {
+    font-size: 0.8rem;
+  }
+}

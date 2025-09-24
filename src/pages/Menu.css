@@ -1,0 +1,382 @@
+.menu-page {
+  min-height: calc(100vh - 200px);
+  background: linear-gradient(135deg, #f8f8f8, #ffffff);
+  padding: 2rem 0;
+}
+
+.menu-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 3rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ff6b3d;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.1em;
+}
+
+.menu-decoration {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
+.left-decoration {
+  left: 0;
+  top: -20px;
+  transform: rotate(-15deg);
+}
+
+.right-decoration {
+  right: 0;
+  top: -20px;
+  transform: rotate(15deg);
+}
+
+.menu-decoration img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.menu-tabs {
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+.menu-tab {
+  background: #e0e0e0;
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.menu-tab:first-child {
+  border-radius: 25px 0 0 25px;
+}
+
+.menu-tab:last-child {
+  border-radius: 0 25px 25px 0;
+}
+
+.menu-tab.active {
+  background: linear-gradient(135deg, #ff6b3d, #ff8f65);
+  color: white;
+}
+
+.menu-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ff6b3d;
+}
+
+.menu-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Signature Bowls Styles */
+.bowls-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.bowl-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.bowl-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.bowl-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 0.5rem 0;
+}
+
+.bowl-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ff6b3d;
+  margin: 0 0 1rem 0;
+}
+
+.bowl-ingredients {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Custom Bowl Styles */
+.custom-bowl {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.step-section {
+  margin-bottom: 3rem;
+}
+
+.step-section:last-child {
+  margin-bottom: 0;
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.step-number {
+  background: #8BC34A;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.step-title {
+  color: #ff6b3d;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.step-subtitle {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0 0;
+  font-style: italic;
+}
+
+.step-content {
+  padding-left: 3rem;
+}
+
+/* Basis Options */
+.basis-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.basis-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f8f8f8;
+  border-radius: 8px;
+  border-left: 4px solid #ff6b3d;
+}
+
+.basis-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.basis-prices {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Protein Grid */
+.protein-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.8rem;
+}
+
+.protein-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  background: #f8f8f8;
+  border-radius: 6px;
+}
+
+.protein-name {
+  color: #333;
+}
+
+.protein-price {
+  color: #ff6b3d;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Mix-ins Grid */
+.mixins-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.mixin-column h4 {
+  color: #333;
+  font-size: 1.1rem;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #ff6b3d;
+}
+
+.mixin-column p {
+  color: #555;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Dressing Grid */
+.dressing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.dressing-item {
+  padding: 1rem;
+  background: #f8f8f8;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.dressing-name {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Toppings Grid */
+.toppings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+}
+
+.topping-item {
+  padding: 0.8rem;
+  background: #f8f8f8;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.topping-name {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+  .menu-title {
+    font-size: 3rem;
+  }
+
+  .menu-decoration {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bowls-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mixins-grid,
+  .dressing-grid,
+  .toppings-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-page {
+    padding: 1rem 0;
+  }
+
+  .menu-header {
+    padding: 1rem 0 2rem 0;
+  }
+
+  .menu-title {
+    font-size: 2.5rem;
+  }
+
+  .menu-decoration {
+    display: none;
+  }
+
+  .menu-content {
+    padding: 0 1rem;
+  }
+
+  .menu-tab {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+
+  .custom-bowl {
+    padding: 1rem;
+  }
+
+  .step-content {
+    padding-left: 2rem;
+  }
+
+  .basis-options,
+  .protein-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mixins-grid,
+  .dressing-grid,
+  .toppings-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bowl-card {
+    padding: 1.5rem;
+  }
+}

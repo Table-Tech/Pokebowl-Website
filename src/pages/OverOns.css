@@ -1,0 +1,137 @@
+.over-ons-page {
+  min-height: calc(100vh - 200px);
+  padding: 2rem 0;
+  background-color: #fafafa;
+}
+
+.over-ons-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 4rem;
+  align-items: start;
+}
+
+.over-ons-content {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.over-ons-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #ff6b3d;
+  text-align: center;
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.1em;
+}
+
+.over-ons-subtitle {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  margin: 0 0 3rem 0;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.over-ons-text {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.over-ons-text p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.over-ons-text p:last-child {
+  margin-bottom: 0;
+}
+
+.over-ons-image {
+  position: sticky;
+  top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.pokebowl-image {
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.pokebowl-image:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 992px) {
+  .over-ons-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .over-ons-content {
+    padding: 2rem;
+  }
+
+  .over-ons-title {
+    font-size: 3rem;
+  }
+
+  .over-ons-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .over-ons-image {
+    order: -1;
+    position: static;
+  }
+
+  .pokebowl-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .over-ons-page {
+    padding: 1rem 0;
+  }
+
+  .over-ons-container {
+    padding: 1rem;
+  }
+
+  .over-ons-content {
+    padding: 1.5rem;
+  }
+
+  .over-ons-title {
+    font-size: 2.5rem;
+  }
+
+  .over-ons-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .over-ons-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .over-ons-text p {
+    text-align: left;
+  }
+}

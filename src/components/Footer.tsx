@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
               <p className="social-text">
                 Like en Share onze Facebook pagina voor leuke aanbiedingen en win acties
               </p>
-              <a href="https://facebook.com" className="social-button facebook-button">
+              <a href="https://www.facebook.com/pokebowloriginal" className="social-button facebook-button">
                 Like ons op Facebook →
               </a>
             </div>
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
               <p className="social-text">
                 Volg ons op Instagram. Maak foto's van jouw Poké Bowl of Sushi Burrito en gebruik #Pokebowl_original
               </p>
-              <a href="https://instagram.com" className="social-button instagram-button">
+              <a href="https://www.instagram.com/pokebowl_original" className="social-button instagram-button">
                 Like ons op Instagram →
               </a>
             </div>

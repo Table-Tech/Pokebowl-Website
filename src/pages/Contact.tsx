@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contact.css';
+import Link from "next/link"
 
 const Contact: React.FC = () => {
   return (
@@ -42,7 +43,7 @@ const Contact: React.FC = () => {
               </div>
               <div className="contact-item">
                 <span className="contact-icon">✉️</span>
-                <span className="contact-text">info@pokebowl.nl</span>
+                <a href="mailto:info@pokebowl.nl" className="contact-text">info@pokebowl.nl</a>
               </div>
             </div>
 
@@ -91,7 +92,7 @@ const Contact: React.FC = () => {
       <div className="map-section">
         <div className="map-container">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2462.3687169847!2d4.469159!3d51.924747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c433c6e4e0d5c1%3A0x9a9e1f9e1f9e1f9e!2sKarel%20Doormanstraat%20457A%2C%203012%20GH%20Rotterdam%2C%20Netherlands!5e0!3m2!1sen!2snl!4v1634567890123!5m2!1sen!2snl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.690727808474!2d4.473436876919103!3d51.91842138059385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c434a08c01e90f%3A0xe97c0f171299a7fd!2sPok%C3%A9%20Bowl%20Original%20Karel%20Doormanstraat!5e1!3m2!1snl!2snl!4v1759761131952!5m2!1snl!2snl"
             width="100%"
             height="400"
             style={{ border: 0 }}
